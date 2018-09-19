@@ -1,0 +1,80 @@
+body {
+  background: #333;
+  color: #fff; }
+
+.navbar {
+  border-bottom: #008ed6 3px solid;
+  opacity: 0.8; }
+
+#pic-box {
+  overflow: hidden; }
+  #pic-box img {
+    transition: all .3s; }
+    #pic-box img:hover {
+      transform: scale(1.1); }
+
+#home-section {
+  background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/home.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 700px; }
+  #home-section .home-inner {
+    padding-top: 150px; }
+  #home-section .card-form {
+    opacity: .75; }
+    @media (min-width: 992px) {
+      #home-section .card-form:hover {
+        opacity: 1; } }
+  #home-section .fa {
+    color: #008ed6;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 30px; }
+  #home-section input.btn-outline-light:hover {
+    color: #008ed6; }
+
+#explore-section .fa {
+  color: #fff;
+  background: #333;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 20px; }
+
+#create-head-section a.btn-outline-light:hover {
+  color: #008ed6; }
+
+#create-section h3 {
+  color: #008ed6; }
+
+#create-section .fa {
+  color: #fff;
+  background: #008ed6;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 20px; }
+
+#share-head-section a.btn-outline-light:hover {
+  color: #17a2b8; }
+
+#share-section h3 {
+  color: #17a2b8; }
+
+#share-section .fa {
+  color: #fff;
+  background: #17a2b8;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 20px; }
+
+#main-footer ul li {
+  list-style: none; }
+  #main-footer ul li a, #main-footer ul li a:hover {
+    text-decoration: none;
+    color: #fff; }
+
+#main-footer .col-md-1 a[href='#home'] {
+  color: #008ed6;
+  font-size: 40px; }
+  #main-footer .col-md-1 a[href='#home']:hover {
+    color: #17a2b8; }

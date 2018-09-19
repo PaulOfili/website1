@@ -1,0 +1,154 @@
+$bg-color:#333;
+$font-color:#fff;
+$primary-color:#008ed6;
+$primary-color-share: #17a2b8;
+$dark-overlay: rgba(0,0,0,.75);
+$font-size: 30px;
+
+body{
+    background: $bg-color ;
+    color: $font-color;    
+}
+
+.navbar {
+    border-bottom: $primary-color 3px solid;
+    opacity: 0.8;
+}
+
+#pic-box{
+    overflow: hidden;
+    // height: 85%;
+    // border-radius: 50%;
+    
+    img{
+        transition: all .3s;
+        
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+    
+
+
+#home-section{
+    background: linear-gradient(to right bottom, $dark-overlay, $dark-overlay), url('../img/home.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 700px;
+
+    .home-inner{
+        padding-top: 150px;
+    }
+
+    .card-form {
+        opacity: .75;
+        
+        @media (min-width: 992px) {
+            &:hover {
+                opacity: 1;
+            }
+        }
+        // .form-control:focus  {
+        //     opacity: 1;
+        //     background: red;
+        // }
+    }
+
+    .fa{
+        color: $primary-color;
+        background: #fff;
+        padding: 4px;
+        border-radius: 5px;
+        font-size: $font-size;
+    }
+
+    input.btn-outline-light:hover {
+        color: $primary-color;
+    }
+
+}
+
+#explore-section {
+
+    h3 {
+        // color:$bg-color;
+        
+    }
+    .fa {
+        color: #fff;
+        background: $bg-color;
+        padding: 3px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}
+
+#create-head-section {
+
+    a.btn-outline-light:hover {
+        color: $primary-color;
+    }
+
+}
+
+#create-section {
+    h3 {
+        color:$primary-color;
+        
+    }
+    .fa {
+        color: #fff;
+        background: $primary-color;
+        padding: 3px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}
+
+#share-head-section {
+
+    a.btn-outline-light:hover {
+        color: $primary-color-share;
+    }
+
+}
+
+#share-section {
+    h3 {
+        color:$primary-color-share;
+        
+    }
+    .fa {
+        color: #fff;
+        background: $primary-color-share;
+        padding: 3px;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+}
+
+#main-footer {
+    // position: relative;
+    ul li{
+
+        list-style: none;
+
+        a, a:hover {
+
+        text-decoration: none;
+        color: #fff;
+        }
+    } 
+
+    .col-md-1 a[href='#home']{
+        color: $primary-color;
+        font-size: 40px;
+        
+        &:hover {
+            color:$primary-color-share;
+        }
+    }
+    
+}
